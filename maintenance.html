@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance Request</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tenant-Landlord Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="rent.html">Pay Rent</a></li>
+          <li><a href="maintenance.html">Maintenance Request</a></li>
+          <li><a href="documents.html">Documents</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Submit a Maintenance Request</h2>
+    <form id="maintenance-form">
+      <label for="tenant-name-maintenance">Tenant Name:</label>
+      <input type="text" id="tenant-name-maintenance" required />
+      <label for="property-address-maintenance">Property Address:</label>
+      <input type="text" id="property-address-maintenance" required />
+      <label for="description">Issue Description:</label>
+      <textarea id="description" required></textarea>
+      <label for="photo">Upload Photo (Optional):</label>
+      <input type="file" id="photo" accept="image/*" />
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <footer class="center-align">
+      <p>&copy; 2025 Tenant-Landlord Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

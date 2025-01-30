@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant-Landlord Hub | Documents</title>
+    <link rel="stylesheet" href="documents.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Tenant-Landlord Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="rent.html">Pay Rent</a></li>
+          <li><a href="maintenance.html">Maintenance Request</a></li>
+          <li><a href="documents.html">Documents</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="documents-section">
+        <h2>Documents</h2>
+        <p>
+          Manage your lease agreements, payment receipts, and more, all in one
+          place.
+        </p>
+
+        <form action="#" method="post" class="documents-form">
+          <!-- View Lease Agreement -->
+          <div class="form-group">
+            <label for="view-lease">View Lease Agreement:</label>
+            <button type="button" class="btn-action" id="view-lease">
+              View
+            </button>
+          </div>
+
+          <!-- Download Payment Receipts -->
+          <div class="form-group">
+            <label for="download-receipts">Download Payment Receipts:</label>
+            <button type="button" class="btn-action" id="download-receipts">
+              Download
+            </button>
+          </div>
+
+          <!-- Upload New Documents -->
+          <div class="form-group">
+            <label for="upload-documents">Upload New Documents:</label>
+            <input
+              type="file"
+              id="upload-documents"
+              name="documents"
+              class="file-input"
+            />
+            <button type="submit" class="btn-action">Upload</button>
+          </div>
+
+          <!-- Form Footer with Reset Button -->
+          <div class="form-footer">
+            <button type="reset" class="btn-secondary">Reset Form</button>
+          </div>
+        </form>
+
+        <!-- Info Box for Recent Updates -->
+        <div class="info-box">
+          <h3>Recent Updates</h3>
+          <p>
+            New lease agreements for March 2025 are available. Please review and
+            download them here.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tenant-Landlord Portal. All rights reserved.</p>
+      <p>
+        Contact support:
+        <a href="mailto:support@tenantlandlordhub.com"
+          >support@tenantlandlordhub.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

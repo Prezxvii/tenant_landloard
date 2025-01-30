@@ -1,0 +1,305 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* Light tan background */
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff; /* White background for header */
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  color: #5e4b3c; /* Dark tan text */
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+nav ul li.close-link {
+  margin-right: 100px; /* Adjust this value to control the space */
+}
+
+
+nav ul li {
+  margin: 0 1px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #5e4b3c; /* Dark tan text */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f28e00; /* Light orange color on hover */
+}
+
+/* Main Section Styles */
+h2 {
+  color: #5e4b3c; /* Dark tan text */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #5e4b3c;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #f28e00; /* Orange color on focus */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5e4b3c; /* Dark tan background */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f28e00; /* Light orange on hover */
+}
+
+/* Links */
+a {
+  color: #5e4b3c; /* Dark tan */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f28e00; /* Orange color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      padding: 15px 30px;
+  }
+
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  form {
+      padding: 15px;
+  }
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5e4b3c; /* Tan color */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: #5e4b3c; /* Tan color */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f28e00; /* Accent orange */
+  transform: scale(1.1);
+}
+
+/* Main Content Styling */
+main {
+  padding: 40px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5e4b3c; /* Tan color */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* List and Link Styling */
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 12px 0;
+}
+
+ul li a {
+  font-size: 1.2rem;
+  color: #5e4b3c; /* Tan color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+  color: #f28e00; /* Accent orange */
+  transform: translateX(10px);
+}
+
+/* Footer Styling (Optional) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  color: #888;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for the Page */
+body {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

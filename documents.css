@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* Light tan background */
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Styling */
+header {
+  background-color: #fff; /* White background for header */
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for the header */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5e4b3c; /* Dark tan color */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* If the header contains navigation links, here’s how we style them */
+header nav {
+  margin-top: 1px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  font-weight: 500;
+  color: #5e4b3c; /* Dark tan color */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f28e00; /* Light orange on hover */
+  transform: scale(1.1);
+}
+
+/* Active link styling */
+header nav ul li a.active {
+  color: #f28e00; /* Active link color */
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #5e4b3c; /* Dark tan text */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f28e00; /* Light orange color on hover */
+}
+
+/* Main Section Styles */
+h2 {
+  color: #5e4b3c; /* Dark tan text */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #5e4b3c;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #f28e00; /* Orange color on focus */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5e4b3c; /* Dark tan background */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f28e00; /* Light orange on hover */
+}
+
+/* Links */
+a {
+  color: #5e4b3c; /* Dark tan */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f28e00; /* Orange color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      padding: 15px 30px;
+  }
+
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  form {
+      padding: 15px;
+  }
+}
+
+/* Footer Styling (Optional) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  color: #888;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for the Page */
+body {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info-box {
+  text-align: center;
+  background-color: #fff; /* Optional: Add a background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px; /* Optional: Set a max width */
+}
+
+.info-box h3 {
+  font-size: 1.8rem;
+  color: #5e4b3c; /* Dark tan text color */
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.form-group button {
+  margin-top: 10px; /* Adds space above the button */
+}
+
+.form-group .btn-action {
+  margin-top: 10px; /* Adds space above the button */
+}
+
+
+.form-group .file-input {
+  margin-bottom: 20px; /* Adds space between the input and the button */
+}
+
+/* Add space between the "Upload" button and the "Reset Form" button */
+.form-footer button {
+  margin-top: 15px; /* Adds space above the reset button */
+}
